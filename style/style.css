@@ -2,8 +2,7 @@
   margin: 0;
   padding: 0;
 }
-@media only screen and (min-width: 768px) {
-}
+
 body {
   font-family: "Raleway", sans-serif;
   font-size: 14px;
@@ -132,11 +131,140 @@ body {
   align-items: center;
 }
 
-@media (max-width: 375px) {
+@media (min-width: 1440px) {
+  body {
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    background-color: hsl(229, 57%, 11%);
+  }
+
+  .container .image {
+    width: 100%;
+    margin-top: 320px;
+  }
+
+  .container img {
+    min-width: 100%;
+  }
+  .container .content-symbol {
+    position: relative;
+  }
+
+  .container .content-symbol .symbol {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr 2fr;
+    grid-template-areas: "square pp massage";
+    margin: -100px auto auto 400px;
+  }
+
+  .container .content-symbol .square {
+    grid-area: square;
+    margin-right: 250px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 250px;
+    height: 200px;
+    background-color: hsl(228, 56%, 26%);
+    clip-path: polygon(0 1%, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .container .content-symbol .square .content {
+    padding: 50px;
+  }
+
+  .container .content-symbol .square .icon-square .img-square {
+    width: 200px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .container .content-symbol .square .icon-square img {
+    max-width: 100%;
+  }
+
+  .container .content-symbol .square .icon-square .img-square button {
+    padding: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: hsl(229, 57%, 11%);
+  }
+
+  .container .content-symbol .pp {
+    grid-area: pp;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 500px;
+    height: 200px;
+    background-color: hsl(228, 56%, 26%);
+    clip-path: polygon(0 1%, 100% 0, 100% 100%, 0% 100%);
+    position: relative;
+  }
+
+  .container .pp .content {
+    padding: 50px 20px 10px 10px;
+  }
+
+  .container .pp .content .content-text {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .container .pp .content .border-role {
+    background-color: hsl(229, 57%, 11%);
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .container .pp .content .border-role .roles {
+    height: 20px;
+    width: 60%;
+    background: linear-gradient(
+      0deg,
+      rgba(209, 143, 152, 1) 0%,
+      rgba(227, 5, 43, 1) 100%
+    );
+    border-radius: 10px;
+  }
+
+  .container .pp .content .capasity {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 0 10px;
+  }
+
+  .indicator {
+    grid-area: massage;
+    clip-path: polygon(
+      0% 0%,
+      100% 0%,
+      100% 75%,
+      75% 75%,
+      75% 100%,
+      50% 75%,
+      0% 75%
+    );
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    border-radius: 5px;
+    margin: -40px 0 0 -250px;
+  }
+
+  .container .indicator .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 576px) {
   body {
     overflow: hidden;
     background-image: url(/images/bg-mobile.png);
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "Raleway", sans-serif;
@@ -154,7 +282,7 @@ body {
   }
 
   .container .content-symbol {
-    margin: 40px 0 0 15px;
+    margin: 150px;
   }
   .container .content-symbol .square {
     border-radius: 20px;
@@ -165,7 +293,7 @@ body {
   }
 
   .container .content-symbol .pp {
-    margin-top: 20px;
+    margin-top: 50px;
     border-radius: 20px;
     width: 250px;
     height: 200px;
