@@ -1,0 +1,80 @@
+/* ? Call atribut */
+.color-1 {
+  background-color: hsl(243, 100%, 93%);
+}
+.color-2 {
+  background-color: hsl(229, 7%, 55%);
+}
+.color-3 {
+  background-color: hsl(228, 56%, 26%);
+}
+.color-4 {
+  background-color: hsl(229, 57%, 11%);
+}
+
+.text-medium {
+  font-size: medium;
+}
+
+.text-400 {
+  font-weight: 400;
+}
+
+.text-700 {
+  font-weight: 700;
+}
+
+.text-bolder {
+  font-weight: bolder;
+}
+.text-secondary {
+  color: hsl(0, 0%, 46%);
+}
+
+.text-white {
+  color: white;
+}
+
+.text-gray {
+  color: rgb(175, 175, 175);
+}
+
+.text-black {
+  color: black;
+}
+
+.text-1 {
+  font-size: 1rem;
+}
+
+.text-2 {
+  font-size: 1.5rem;
+}
+
+.text-3 {
+  font-size: 2rem;
+}
+
+.mr-1 {
+  margin-right: 10px;
+}
+
+.mr-2 {
+  margin-right: 20px;
+}
+
+.mr-3 {
+  margin-right: 30px;
+}
+
+.mt-1 {
+  margin-top: 10px;
+}
+
+.mt-2 {
+  margin-top: 20px;
+}
+
+.mt-3 {
+  margin-top: 30px;
+}
